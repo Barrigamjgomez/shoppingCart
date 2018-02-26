@@ -1,0 +1,24 @@
+{
+  "name": "api-pago",
+  "version": "1.0.0",
+  "description": "En este reto crearemos una pagina \"shopping cart\", la cúal será enfocada en productos textil, está tendra las siguientes caracteristicas :",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barrigamjgomez/shoppingCart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barrigamjgomez/shoppingCart/issues"
+  },
+  "homepage": "https://github.com/Barrigamjgomez/shoppingCart#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}

@@ -7,6 +7,7 @@ En este reto crearemos una pagina "shopping cart", la cúal será enfocada en pr
 - Venta OnLine
 
 Interacción con paginas similares, desarrollo pasó a pasó del proceso de compra con shopping cart :
+
 - Elegir el producto
 - Descripción del producto
 - Elegir el producto 
