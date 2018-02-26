@@ -1,0 +1,60 @@
+const shirtMarket= [{
+  "image":"assets/images/polera1.jpg",
+  "name": "Polera - Björk – Debut",
+  "description":"Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera2.jpg",
+  "name": "Polera - Black Sabbath – Debut",
+  "description":"Black Sabbath fue una banda británica de heavy metal formada en 1968 en Birmingham por Tony Iommi (guitarra), Ozzy Osbourne (voz), Geezer Butler (bajo) y Bill Ward (batería). Desde entonces, la banda sufrió multitud de cambios de formación, con más de veinticinco antiguos miembros.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera3.jpg",
+  "name": "Polera – The Clash  – Debut ",
+  "description": "",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera4.jpg",
+  "name": "Polera – Akira  – Debut ",
+  "description": "Akira (アキラ?) es un manga en el que también se basa la película homónima de animación japonesa. Ambas obras tuvieron un reconocimiento instantáneo como clásicos dentro de sus respectivos géneros.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera5.jpg",
+  "name": "Polera – Alice in Chains  – Debut ",
+  "description": "Alice in Chains es un álbum homónimo de la banda de grunge Alice in Chains. Es su tercer álbum de larga duración, ya que Jar of Flies se considera EP y no un álbum completo. El álbum era conocido también como Tripod, ya que en la carátula aparece un perro con tres patas",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera6.jpg",
+  "name": "Polera – David Bowie – Debut ",
+  "description": "Nothing Has Changed es un álbum recopilatorio del músico británico David Bowie, publicado por la compañía discográfica Parlophone en noviembre de 2014. El álbum incluyó una canción nueva, «Sue (Or in a Season of Crime)», y es notable por presentar canciones del álbum inédito Toy: «Your Turn to Drive», previamente publicado como sencillo a través de Internet. Diseño exclusivo de Jofre Conjota.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera7.jpg",
+  "name": "Polera – Depeche Mode – Debut ",
+  "description": "Polera inspirada en la polera del disco Violator de la banda inglesa Depeche Mode. Violator es el séptimo álbum del grupo de música electrónica Depeche Mode (Andrew Fletcher, Martin Gore, Alan Wilder, David Gahan) producido durante 1989-90 y publicado en marzo de 1990.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera8.jpg",
+  "name": "Polera – Gustavo Cerati – Debut ",
+  "description":"Bocanada es el segundo disco solista del músico de rock argentino Gustavo Cerati, y es el debut luego de la disolución de Soda Stereo. Es considerado hasta el día de hoy como una obra maestra del músico y un trabajo esencial para la música hispana. Recibió excelentes críticas, tanto de los especialistas como de los fanáticos.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera9.jpg",
+  "name": "Polera – Jeff Buckley – Debut ",
+  "description":"effrey Scott “Jeff” Buckley (Anaheim, California, Estados Unidos, 17 de noviembre de 1966 – Memphis, Tennessee, Estados Unidos, 29 de mayo de 1997) fue un cantautor estadounidense de folk rock, considerado una de las mejores voces de la música de todos los tiempos.",
+  "Precio":"$13.990",
+},
+{
+  "image":"assets/images/polera10.jpg",
+  "name": "Polera – Kill Bill – Debut ",
+  "description":"Kill Bill es una película de acción y suspense de dos partes estrenada en 2003 y 2004, que fue escrita y dirigida por Quentin Tarantino. Kill Bill originalmente fue propuesta para tener un lanzamiento único en los cines, pero con una duración de más de cuatro horas, fue separada en dos volúmenes.",
+  "Precio":"$13.990",
+}]

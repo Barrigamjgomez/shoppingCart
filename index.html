@@ -2,233 +2,253 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>STELLAR</title>
-    <link rel="icon" href="assets/images/corporative-img/favicon.ico" type="..." />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STELLAR</title>
+  <link rel="icon" href="assets/images/corporative-img/favicon.ico" type="..." />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 </head>
-
 <body>
 
+  <nav class="navbar navbar-inverse navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img src="assets/images/corporative-img/logo-white.png" width="20%:" alt="">
+      </div>
 
-    <nav class="navbar navbar-inverse navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img src="assets/images/corporative-img/logo-white.png" width="20%:" alt="">
-            </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">POLERAS</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">0</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">POLERAS</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">0</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<!-- lOGIN -->
+  <section>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Registro de usuario</h4>
+        <input id="email" placeholder="ingresa email" type="email" name="" value="">
+        <input id="password" placeholder="Ingresa contraseña" type="password" name="" value="">
+        <button onclick="Register()"type="button" name="button">Enviar</button>
+      </div>
+      <div class="col-sm-6">
+        <h4>Ingreso de usuario</h4>
+        <input id="emails" placeholder="ingresa email" type="email" name="" value="">
+        <input id="passwords" placeholder="Ingresa contraseña" type="password" name="" value="">
+        <button onclick="Ingress()" type="button" name="button">Acceder</button>
+      </div>
+    </div>
+    <div id="content">
+    </div>
+  </section>
 
-    <section>
-        <div id="container-all-shirts" class="row">
-            <div class="col-12-lg">
-                <div class="row">
-                    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera1.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello One Little Indian
-                                en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor Nellee Hooper, quien co-escribió
-                                cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera2.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                    One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                    Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera3.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                    One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                    Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera3.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                                        One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                                        Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                                    <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera3.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                                        One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                                        Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                                    <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera3.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                                        One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                                        Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                                    <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-7" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera3.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                                                            One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                                                            Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                                                        <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="container-shirt-8" class="col-sm-6 col-lg-3">
-                        <div class="thumbnail">
-                            <img src="assets/images/polera3.jpg" alt="...">
-                            <div class="caption">
-                                <h4 class="name">Polera - Björk – Debut</h4>
-                                <hr>
-                                <h5>$13.990</h5>
-                                <!-- <hr> -->
-                                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
-                                                                            One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
-                                                                            Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
-
-                                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
-                                                                        <a href="#" class="btn btn-default" role="button">Button</a> -->
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+  <section>
+    <div id="container-all-shirts" class="row">
+      <div class="col-12-lg">
         <div class="row">
-            <div class="col-12">
-                <h6>Todos los derechos reservados</h6>
-            </div>
-        </div>
-    </footer>
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera1.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello One Little Indian
+                en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor Nellee Hooper, quien co-escribió
+                cinco de las canciones de Debut con ella</p> -->
 
-    <script src="https://use.fontawesome.com/de7a47ff86.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera2.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera3.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera3.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera3.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera3.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-7" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera3.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div id="container-shirt-8" class="col-sm-6 col-lg-3">
+            <div class="thumbnail">
+              <img src="assets/images/polera3.jpg" alt="...">
+              <div class="caption">
+                <h4 class="name">Polera - Björk – Debut</h4>
+                <hr>
+                <h5>$13.990</h5>
+                <!-- <hr> -->
+                <!--<p>Debut es el segundo álbum de estudio de la cantautora islandesa Björk, lanzado en julio de 1993 por el sello
+                One Little Indian en el Reino Unido y Elektra en los Estados Unidos. Björk trabajó en el álbum con el productor
+                Nellee Hooper, quien co-escribió cinco de las canciones de Debut con ella</p> -->
+
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col-12">
+        <h6>Todos los derechos reservados</h6>
+      </div>
+    </div>
+  </footer>
+
+  <!-- script Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVZYiMu1bOk_01VxoIapo5_NLqry034Qg",
+    authDomain: "e-commerce-71807.firebaseapp.com",
+    databaseURL: "https://e-commerce-71807.firebaseio.com",
+    projectId: "e-commerce-71807",
+    storageBucket: "e-commerce-71807.appspot.com",
+    messagingSenderId: "438430296825"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="https://use.fontawesome.com/de7a47ff86.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+  <script src="assets/js/data.js" charset="utf-8"></script>
+  <script src="assets/js/firebase.js" charset="utf-8"></script>
 </body>
 
 </html>
-
-
