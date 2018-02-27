@@ -7,7 +7,7 @@ nav{
     color: #FFF;
 }
 
-.navbar-inverse {
+.navbar{
     background-color: #8C418D;
     border: none;
 }
@@ -18,15 +18,30 @@ nav{
     padding-bottom: 1em;
 }
 
-.name {
-color:#8C418D; 
-font-family: 'Fjalla One', sans-serif;
-letter-spacing: 0.1em; 
+#container-shirt-1 {
+   padding: auto;
 }
 
+.name {
+color:#8C418D;
+font-family: 'Fjalla One', sans-serif;
+letter-spacing: 0.1em;
+}
+
+
 footer {
-    background-color:#8C418D;
+    /*background-color:#8C418D;*/
     color: azure;
     text-align: center;
 }
-
+.imagen{
+    width: 100%;
+}
+.contenedor{
+    background-color: #fff;
+    width: 30%;
+    display: inline-block;
+}
+.muestrate{
+    display: inline-block;
+}
