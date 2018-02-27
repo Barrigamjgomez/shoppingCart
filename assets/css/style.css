@@ -1,0 +1,32 @@
+body {
+    background-image: url('../images/bg_galaxy4.jpg');
+}
+nav{
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.1em;
+    color: #FFF;
+}
+
+.navbar-inverse {
+    background-color: #8C418D;
+    border: none;
+}
+
+#container-all-shirts {
+    padding: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.name {
+color:#8C418D; 
+font-family: 'Fjalla One', sans-serif;
+letter-spacing: 0.1em; 
+}
+
+footer {
+    background-color:#8C418D;
+    color: azure;
+    text-align: center;
+}
+
