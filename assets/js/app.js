@@ -1,14 +1,24 @@
-'use strict'
+$(document).ready(function(){
 
-const express = require('express');
-const ejs = require('ejs');
-const paypal = require('paypal-rest-sdk');
+let image= [];
+let name= [];
+let description=[]
+let precio=[]
+  for (let i = 0; i < shirtMarket.length; i++) {
+    name.push(shirtMarket[i].name);
+    $('.thumbnail').append(`<h5>${name}</h5>`)
+  }
+  for (var i = 0; i < shirtMarket.length; i++) {
+    image.push(shirtMarket[i].image);
+    $('.thumbnail').append(`<img src="${image}" alt="...">`);
+  }
+  for (var i = 0; i < shirtMarket.length; i++) {
+    description.push(shirtMarket[i].description);
+    $('.thumbnail').append(`<p>${description}</p>`);
+  }
+  for (var i = 0; i < shirtMarket.length; i++) {
+    precio.push(shirtMarket[i].Precio);
+    $('.thumbnail').append(`<span>${precio}</span>`)
+  }
 
-const app = express();
-
-
-app.set('view engine', 'ejs');
-
-app.get('/',(req, res) => res.render('index'));
-
-app.listen(3000, () => console.log('server Started'));
+});
