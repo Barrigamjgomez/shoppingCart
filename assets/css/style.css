@@ -7,7 +7,7 @@ nav{
     color: #FFF;
 }
 
-.navbar-inverse {
+.navbar{
     background-color: #8C418D;
     border: none;
 }
@@ -19,9 +19,9 @@ nav{
 }
 
 .name {
-color:#8C418D; 
+color:#8C418D;
 font-family: 'Fjalla One', sans-serif;
-letter-spacing: 0.1em; 
+letter-spacing: 0.1em;
 }
 
 footer {
@@ -29,4 +29,3 @@ footer {
     color: azure;
     text-align: center;
 }
-
