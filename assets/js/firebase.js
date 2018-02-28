@@ -30,10 +30,11 @@ function Ingress(){
 }
 
 function  Observer(){
+
   firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     console.log("Existe usuario activo");
-    exhibit(user);
+    /*exhibit(user);*/
     // User is signed in.
     var displayName = user.displayName;
     var email = user.email;
@@ -49,7 +50,7 @@ function  Observer(){
     // ...
     console.log("No existe usuario activo");
   }
-});
+})
 }
 Observer();
 
@@ -58,8 +59,7 @@ function exhibit(user){
   let content= document.getElementById('content');
   if (user.emailVerified) {
     content.innerHTML= `<p>¡Bienvenido!</p>
-    <button onclick="Closed()" type="button" name="button">Cerrar Sesión</button>`;
-
+    <button  id="btn-inicio" onclick="Closed()" type="button" name="button">Cerrar Sesión</button>`;
   }
 }
 

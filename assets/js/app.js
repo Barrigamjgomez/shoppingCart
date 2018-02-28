@@ -1,24 +1,39 @@
 $(document).ready(function(){
+   /*========
+   Data.json
 
-let image= [];
-let name= [];
-let description=[]
-let precio=[]
+
   for (let i = 0; i < shirtMarket.length; i++) {
-    name.push(shirtMarket[i].name);
-    $('.thumbnail').append(`<h5>${name}</h5>`)
+    shirtMarket[i];
+    $('.thumbnails').append(`<h5> + ${shirtMarket[i]} +  </h5><img src="${image}" alt="..."><p>${description}</p><span>${precio}</span>`)
   }
-  for (var i = 0; i < shirtMarket.length; i++) {
-    image.push(shirtMarket[i].image);
-    $('.thumbnail').append(`<img src="${image}" alt="...">`);
-  }
-  for (var i = 0; i < shirtMarket.length; i++) {
-    description.push(shirtMarket[i].description);
-    $('.thumbnail').append(`<p>${description}</p>`);
-  }
-  for (var i = 0; i < shirtMarket.length; i++) {
-    precio.push(shirtMarket[i].Precio);
-    $('.thumbnail').append(`<span>${precio}</span>`)
-  }
+     ==========*/
 
+
+// Get the modal1
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function () {
+   modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+   modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+   if (event.target == modal) {
+       modal.style.display = "none";
+   }
+}
+//FIN MODAL
 });
