@@ -37,6 +37,7 @@ nav{
    padding: 1em;
 }
 
+
 .item-ingreso-nav {
    color: #FFF;
 }
@@ -44,4 +45,39 @@ nav{
 #ingreso-usuario {
    background-color: rgb(136, 12, 138);
    padding: 0.5em;
+}
+
+#container-shirt-1 {
+   padding: auto;
+}
+
+.name, h5 {
+color:#8C418D;
+font-family: 'Fjalla One', sans-serif;
+letter-spacing: 0.1%;
+}
+
+
+h6 {
+    background-color:#8C418D;
+    color: azure;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 0;
+}
+.imagen{
+    width: 100%;
+    padding: 3%;
+}
+.contenedor{
+    background-color: #fff;
+    width: 30%;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    margin-left: 2em;
+}
+.muestrate{
+    display: inline-block;
+    text-align: center;
 }
