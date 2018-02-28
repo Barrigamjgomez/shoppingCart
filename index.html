@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse navbar-default">
+  <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -28,16 +28,44 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div  class="modal-content">
+              <span class="close">&times;</span>
+              <div id="modal-registro" class="row">
+                <div class="col-lg-12">
+                  <h4>Registro de usuario</h4>
+                  <input id="email" placeholder="ingresa email" type="email" name="" value="">
+                  <input id="password" placeholder="Ingresa contraseña" type="password" name="" value="">
+                  <button onclick="Register()" type="button" name="button" id="btn-registro">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <li>
-            <a href="#">POLERAS</a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
           </li>
-          <li>
-            <a href="#">
-              <i class="fa fa-shopping-cart"></i>
-            </a>
-          </li>
+
           <li>
             <a href="#">0</a>
+          </li>
+
+          <li>
+            <a class"item-ingreso-nav" id="myBtn" href="#">REGÍSTRATE</a>
+          </li>
+
+          <li id="ingreso-usuario">
+            <p class="item-ingreso-nav" >INGRESO DE USUARIO</p>
+            <input id="emails" placeholder="ingresa email" type="email" name="" value="">
+            <input id="passwords" placeholder="Ingresa contraseña" type="password" name="" value="">
+            <button id="btn-inicio" onclick="Ingress()" type="button" name="button">Acceder</button>
+          </li>
+
+          <li>
+            <div id="content"></div>
           </li>
         </ul>
       </div>
@@ -46,14 +74,170 @@
     <!-- /.container-fluid -->
   </nav>
 
+<!-- lOGIN-
+  <section>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>Registro de usuario</h4>
+        <input id="email" placeholder="ingresa email" type="email" name="" value="">
+        <input id="password" placeholder="Ingresa contraseña" type="password" name="" value="">
+        <button onclick="Register()"type="button" name="button">Enviar</button>
+      </div>
+      <div class="col-sm-6">
+        <h4>Ingreso de usuario</h4>
+        <input id="emails" placeholder="ingresa email" type="email" name="" value="">
+        <input id="passwords" placeholder="Ingresa contraseña" type="password" name="" value="">
+        <button onclick="Ingress()" type="button" name="button">Acceder</button>
+      </div>
+    </div>
+    <div id="content">
+    </div>
+  </section>-->
+
+  <!-- productos -->
+  <section>
+    <div id="container-all-shirts" class="row">
+      <div class="col-12-lg">
+        <div class="row">
+          <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+            <div class="thumbnails">
+              <!-- PRODUCTOS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- imagenes&paypal-->
+<section>
+  <div class="rom">
+    <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+      <div class="thumbnail">
+                <img src="assets/images/polera2.jpg" alt="...">
+                <div class="caption row">
+                  <div class="col-sm-12">
+                    <h4 class="name">Polera - Björk – Debut</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-5">
+                    <div class="paypal">
+                      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                          <input type="hidden" name="cmd" value="_s-xclick">
+                          <input type="hidden" name="hosted_button_id" value="5A34WFDB5F8G4">
+                          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="carrito">
+                     <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                      ">
+                      <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                      <img alt="" border="0" src="https://www.sandbox.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rom">
+            <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+              <div class="thumbnail">
+                <img src="assets/images/polera2.jpg" alt="...">
+
+                <div class="caption row">
+                  <div class="col-sm-12">
+                    <h4 class="name">Polera - Björk – Debut</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-5 ">
+                    <div class="paypal">
+                      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                          <input type="hidden" name="cmd" value="_s-xclick">
+                          <input type="hidden" name="hosted_button_id" value="5A34WFDB5F8G4">
+                          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="carrito">
+                     <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                        ">
+                        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.sandbox.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rom">
+            <div id="container-shirt-1" class="col-sm-6 col-lg-3">
+              <div class="thumbnail">
+                <img src="assets/images/polera2.jpg" alt="...">
+
+                <div class="caption row">
+                  <div class="col-sm-12">
+                    <h4 class="name">Polera - Björk – Debut</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-5 ">
+                    <div class="paypal">
+                      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                          <input type="hidden" name="cmd" value="_s-xclick">
+                          <input type="hidden" name="hosted_button_id" value="5A34WFDB5F8G4">
+                          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="carrito">
+                     <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                      ">
+                      <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                      <img alt="" border="0" src="https://www.sandbox.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                <!-- <hr>
+<!- imagenes&paypal-->
+
 <!-- imagenes&paypal-->
   <section>
-  
+
       <div class="col-md-12">
          <div class="muestrate"> <!--aqui va la informacion de la data --></div>
       </div>
-    
- 
+
+
      <!--<img src="assets/images/polera2.jpg" alt="...">
 
 
@@ -61,7 +245,7 @@
         <div class="col-sm-12">
           <h4 class="name">Polera - Björk – Debut</h4>
         </div>-->
-   
+
   <footer>
     <div class="row">
       <div class="col-lg-12">
@@ -87,9 +271,10 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://use.fontawesome.com/de7a47ff86.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/data.json" charset="utf-8"></script>
   <script src="assets/js/data.js" charset="utf-8"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
   <script src="assets/js/firebase.js" charset="utf-8"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
 </html>
